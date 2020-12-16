@@ -14,6 +14,18 @@ async function getUsers() {
     }
 }
 
+async function addUser(user){
+    try{
+
+        let pool= await sql.connect(config);
+        let insertUser = await  pool.request()
+            .input('UserId',sql.Int,user.UserId)
+
+    }catch (e) {
+
+    }
+}
+
 
 
 module.exports = {
