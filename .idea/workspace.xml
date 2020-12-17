@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="072cddcb-7537-473c-82cb-7d3688774b66" name="Default Changelist" comment="connected to sql server">
+    <list default="true" id="072cddcb-7537-473c-82cb-7d3688774b66" name="Default Changelist" comment="authentication.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dpoperations.js" beforeDir="false" afterPath="$PROJECT_DIR$/dpoperations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authentication.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608154764539</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="authentication.js">
+      <created>1608155764385</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608155764385</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +141,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="connected to sql server" />
-    <option name="LAST_COMMIT_MESSAGE" value="connected to sql server" />
+    <MESSAGE value="authentication.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="authentication.js" />
   </component>
 </project>
