@@ -5,7 +5,7 @@ const  config = require('./dbconfig');
 async function getUsers() {
     try {
         let pool = await sql.connect(config);
-        let employee= await pool.request().query("SELECT * from EmployeeSchema.EmployeePassword");
+        let employee= await pool.request().query("SELECT * from EmployeeSchema.Job");
          return employee.recordset;
 
     }
@@ -14,20 +14,24 @@ async function getUsers() {
     }
 }
 
-async function addUser(user){
+async function addJob(job){
     try{
 
-        let pool= await sql.connect(config);
-        let insertUser = await  pool.request()
-            .input('UserId',sql.Int,user.UserId)
+            let pool= await sql.connect(config);
+            let insertJob = await  pool.request()
+            .input('job_role',sql.Varchar,job.job_role)
+            .execute();
+            return addJob.recordsets;
+
 
     }catch (e) {
-
+          console.log(e)
     }
 }
 
 
 
 module.exports = {
-   getUsers:getUsers
+   getUsers:getUsers,
+    addJob:addJob
 }

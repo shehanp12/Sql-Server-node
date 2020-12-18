@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="072cddcb-7537-473c-82cb-7d3688774b66" name="Default Changelist" comment="authentication.js">
+      <change afterPath="$PROJECT_DIR$/data/events/addEvent.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/events/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/events.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dpoperations.js" beforeDir="false" afterPath="$PROJECT_DIR$/dpoperations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authentication.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ljFiCh5g1TW3aZ5kRqXoVTCvIC" />
@@ -26,9 +40,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlserver" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.19.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/events/addjob.sql" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -72,6 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608102719544</updated>
       <workItem from="1608102720609" duration="17364000" />
+      <workItem from="1608270710064" duration="10461000" />
     </task>
     <task id="LOCAL-00001" summary="connected to sql server">
       <created>1608152456006</created>
@@ -138,6 +158,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="connected to sql server" />

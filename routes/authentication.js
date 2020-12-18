@@ -15,6 +15,17 @@ router.get('/order',(request,response)=>{
 
 })
 
+router.get('/addJob',(request,response)=>{
+
+    let job = {...request.body}
+
+    dboperations.addJob(job).then(result => {
+        response.status(201).json(result);
+    })
+
+})
+
+
 module.exports=router;
 
 
