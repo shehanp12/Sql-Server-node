@@ -1,6 +1,6 @@
 INSERT INTO [EmployeeSchema].[events]
 (
-    [userId]
+
 , [title]
 , [description]
 , [startDate]
@@ -10,7 +10,7 @@ INSERT INTO [EmployeeSchema].[events]
 )
 VALUES
     (
-    @userId
+
         , @title
         , @description
         , @startDate
@@ -19,4 +19,4 @@ VALUES
         , @endTime
     );
 
-SELECT SCOPE_IDENTITY() AS id;
+

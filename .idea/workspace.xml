@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="072cddcb-7537-473c-82cb-7d3688774b66" name="Default Changelist" comment="authentication.js">
-      <change afterPath="$PROJECT_DIR$/data/events/addEvent.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/events/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dpoperations.js" beforeDir="false" afterPath="$PROJECT_DIR$/dpoperations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authentication.js" afterDir="false" />
+    <list default="true" id="072cddcb-7537-473c-82cb-7d3688774b66" name="Default Changelist" comment="testing">
+      <change beforePath="$PROJECT_DIR$/data/events/addEvent.sql" beforeDir="false" afterPath="$PROJECT_DIR$/data/events/addEvent.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608102719544</updated>
       <workItem from="1608102720609" duration="17364000" />
-      <workItem from="1608270710064" duration="10461000" />
+      <workItem from="1608270710064" duration="10842000" />
     </task>
     <task id="LOCAL-00001" summary="connected to sql server">
       <created>1608152456006</created>
@@ -142,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608155764385</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="testing">
+      <created>1608291518009</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608291518009</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +161,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="connected to sql server" />
     <MESSAGE value="authentication.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="authentication.js" />
+    <MESSAGE value="testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing" />
   </component>
 </project>
