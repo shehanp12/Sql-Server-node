@@ -1,3 +1,5 @@
+
+'use strict';
 const dboperations = require('../dpoperations');
 const express = require('express');
 const app = express();

@@ -1,22 +1,21 @@
 
 
-module.exports.register = async server => {
+'use strict';
+const dboperations = require('../dpoperations');
+const express = require('express');
+const app = express();
+// const addEvent = require('/data/events/index')
+const cors= require('cors');
+const bodyParser = require('body-parser');
+const router = express.Router();
 
-    server.route( {
-        method: "POST",
-        path: "/api/events",
+router.post('/shehan',async (request,response) =>{
 
-        handler: async request => {
+    const res = await data.events
+        .addEvent({title,description,startDate,startTime,endTime});
+    return res.recordset[ 0 ];
 
-
-                const db = request.server.plugins.sql.client;
-                const userId = request.auth.credentials.profile.id;
-                const { startDate, startTime, endDate, endTime, title, description } = request.payload;
-                const res = await db.events.addEvent( { userId, startDate, startTime, endDate, endTime, title, description } );
-                return res.recordset[ 0 ];
+})
 
 
-        }
-    } );
-
-}
+module.exports=router;

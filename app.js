@@ -1,3 +1,5 @@
+
+'use strict';
 const express= require('express');
 const  app= express();
 const router = express.Router();
@@ -26,12 +28,14 @@ app.use(cors());
 
 //Imports Routes
 const authRoute = require('./routes/authentication');
+const eventsRoute = require('./routes/events')
 
 //Middleware
 app.use(express.json());
 
 //Route Middleware
 app.use('/api/user',authRoute);
+app.use('/api/user',eventsRoute);
 
 
 app.get('/',function (req,res) {
