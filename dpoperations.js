@@ -1,5 +1,4 @@
 
-'use strict';
 
 const sql = require('mssql');
 const  config = require('./dbconfig');
@@ -17,24 +16,29 @@ async function getUsers() {
     }
 }
 
-async function addJob(job){
-    try{
+async function addEvent(event) {
 
-            let pool= await sql.connect(config);
-            let insertJob = await  pool.request()
-            .input('job_role',sql.Varchar,job.job_role)
-            .execute();
-            return addJob.recordsets;
-
-
-    }catch (e) {
-          console.log(e)
+    try {
+        let pool = await sql.connect(config);
+        let insertProduct = await pool.request()
+            .input('title', sql.NVarChar, event.title)
+            .input('description', sql.NVarChar,event.description)
+            .input('startDate', sql.Date, event.startDate)
+            .input('startTime', sql.Time,event.startTime)
+            .input('endDate', sql.Date,event.endDate)
+            .input('endTime', sql.Time,event.endTime)
+            .execute('InsertEvents');
+        return insertProduct.recordsets;
     }
-}
+    catch (err) {
+        console.log(err);
+    }
 
+}
 
 
 module.exports = {
    getUsers:getUsers,
-    addJob:addJob
+    addEvent:addEvent
+
 }

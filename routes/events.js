@@ -11,9 +11,11 @@ const router = express.Router();
 
 router.post('/shehan',async (request,response) =>{
 
-    const res = await data.events
-        .addEvent({title,description,startDate,startTime,endTime});
-    return res.recordset[ 0 ];
+    let event = {...request.body}
+dboperations.addEvent(event).then(result =>{
+    response.status(201).json(result);
+
+})
 
 })
 
