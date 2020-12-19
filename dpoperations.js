@@ -27,7 +27,7 @@ async function addEvent(event) {
             .input('startTime', sql.Time,event.startTime)
             .input('endDate', sql.Date,event.endDate)
             .input('endTime', sql.Time,event.endTime)
-            .execute('InsertEvents');
+            .execute('InsertPersonalDetails');
         return insertProduct.recordsets;
     }
     catch (err) {
