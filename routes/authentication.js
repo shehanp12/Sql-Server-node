@@ -33,7 +33,7 @@ const jwt = require('jsonwebtoken');
 
 router.post('/register',async (req,res) =>{
 
-    if ((!req.body.username) || (!req.body.password)) {
+    if ((!req.body.last_name) || (!req.body.first_name)) {
         res.json({success: false, msg: 'Enter all fields'})
     }
     else{
@@ -55,16 +55,27 @@ router.post('/register',async (req,res) =>{
         // })
 
         const user = {...req.body}
-         dboperations.
 
-        boardingProvider.save(function (err,boardingProvider){
-            if(err){
-                res.json({success: false, msg: 'Failed to save'})
-            }
-            else {
-                res.json({success: true, msg: 'Successfully saved'})
-            }
-        })
+         dboperations.addEmployee(user).then(result =>{
+             res.status(201).json(result);
+             // res.json({success: true, msg: 'Successfully saved'})
+
+
+         })
+
+
+
+        //
+        // boardingProvider.save(function (err,boardingProvider){
+        //     if(err){
+        //         res.json({success: false, msg: 'Failed to save'})
+        //     }
+        //     else {
+        //         res.json({success: true, msg: 'Successfully saved'})
+        //     }
+        // })
+
+
 
     }
 
